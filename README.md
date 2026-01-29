@@ -55,3 +55,11 @@ Follow these steps to set up the project locally.
 ```bash
 git clone [https://github.com/Bikram731/careercraft.git](https://github.com/Bikram731/careercraft.git)
 cd careercraft
+
+cd server
+npm install
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_super_secret_key
+npm start
+
