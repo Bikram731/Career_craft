@@ -1,65 +1,70 @@
-# 🚀 CareerCraft
+# Getting Started with Create React App
 
-**CareerCraft** is a full-stack MERN (MongoDB, Express, React, Node.js) application designed to guide students and professionals through personalized career roadmaps. It features intelligent recommendations, progress tracking, and resource management to help users master new skills effectively.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
+## Available Scripts
 
-## ✨ Key Features
+In the project directory, you can run:
 
-### 🔐 Authentication & Security
-* **Secure Auth:** JWT-based stateless authentication with bcrypt password hashing.
-* **Role-Based Access Control (RBAC):** Admin-only dashboards to manage career paths and resources.
-* **Protected Routes:** Middleware to secure sensitive endpoints and user data.
+### `npm start`
 
-### 🧠 Intelligent Recommendation Engine
-* **Fuzzy Logic Search:** Implemented **Fuse.js** to provide typo-tolerant search and personalized career suggestions based on user interests.
-* **Dynamic Filtering:** Filter careers by difficulty level, category, and popularity.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### 📊 Interactive Dashboard & Progress Tracking
-* **Granular Tracking:** Users can mark individual resources and milestones as "Completed".
-* **Visual Analytics:** Real-time **Donut Charts** visualize completion rates for every enrolled career path.
-* **Career Comparison:** Compare two career paths side-by-side to evaluate requirements and resources.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### 🛠 Admin Capabilities
-* **Content Management:** Admins can Create, Read, Update, and Delete (CRUD) career paths, milestones, and learning resources.
-* **User Insights:** View platform usage and manage content delivery.
+### `npm test`
 
----
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## 🛠 Tech Stack
+### `npm run build`
 
-### **Frontend**
-* **React.js:** Component-based UI architecture.
-* **Tailwind CSS:** Responsive and modern styling.
-* **Framer Motion / AOS:** Smooth animations and scroll effects.
-* **Chart.js:** Data visualization for user progress.
-* **Context API:** Global state management for Authentication.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### **Backend**
-* **Node.js & Express.js:** RESTful API architecture.
-* **MongoDB & Mongoose:** NoSQL database with normalized schemas for Users and Career Paths.
-* **Multer:** Handling file uploads (Profile Pictures).
-* **Fuse.js:** In-memory fuzzy search algorithm.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
----
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## 🚀 Getting Started
+### `npm run eject`
 
-Follow these steps to set up the project locally.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Prerequisites
-* Node.js (v14+)
-* MongoDB (Local or Atlas)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### 1. Clone the Repository
-```bash
-git clone [https://github.com/Bikram731/careercraft.git](https://github.com/Bikram731/careercraft.git)
-cd careercraft
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-cd server
-npm install
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_super_secret_key
-npm start
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
