@@ -63,3 +63,16 @@
 ```bash
 git clone [https://github.com/YOUR_USERNAME/careercraft.git](https://github.com/YOUR_USERNAME/careercraft.git)
 cd careercraft
+
+cd backend
+npm install
+
+npm run dev
+# Server should run on http://localhost:5000
+
+cd frontend
+npm install
+
+npm start
+# App should run on http://localhost:3000
+
