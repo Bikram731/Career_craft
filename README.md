@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# 🚀 CareerCraft: Your AI-Powered Career Navigator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
 
-## Available Scripts
+**CareerCraft** is a comprehensive, full-stack platform designed to help users discover, track, and achieve their career goals. By leveraging fuzzy search algorithms, custom matching logic, and role-based access control, CareerCraft provides personalized roadmaps and curated resources for software developers, analysts, and competitive exam aspirants.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🎯 For Users
+* **Smart Career Recommendations:** A custom algorithm calculates a "Match Score" based on user interests, goals, and fuzzy text matching (`Fuse.js`).
+* **Interactive Progress Tracking:** Users can save careers and track their journey through specific resources and milestones, visualized with dynamic Donut Charts (`Chart.js`).
+* **Career Comparison:** A side-by-side comparison modal to evaluate multiple career paths based on difficulty, resources, and requirements.
+* **Live Job Fetching:** Integrated with RapidAPI (JSearch) to fetch real-time, relevant job postings based on the selected career path.
+* **Secure Profile Management:** Secure JWT-based authentication with Bcrypt password hashing, rigorous regex-based password strength validation, and Multer-powered profile image uploads.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🛡️ For Admins
+* **Role-Based Access Control (RBAC):** Dedicated Admin Dashboard protected by custom middleware to prevent unauthorized data manipulation.
+* **Dynamic Content Management:** Admins can Create, Read, Update, and Delete (CRUD) career paths, resources, and milestones directly from the UI.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tech Stack & Architecture
 
-### `npm run build`
+### **Frontend (Client-Side)**
+* **React.js** (Functional Components, Hooks, Context API for global state management)
+* **Tailwind CSS** (Responsive, utility-first styling)
+* **Framer Motion** (Smooth scroll animations and transitions)
+* **React Router Dom** (Client-side routing and protected routes)
+* **React-Chartjs-2** (Data visualization)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **Backend (Server-Side)**
+* **Node.js & Express.js** (RESTful API architecture)
+* **MongoDB & Mongoose** (NoSQL database modeling, complex schema referencing, and population)
+* **JSON Web Tokens (JWT)** (Stateless, secure session management)
+* **Bcrypt.js** (Cryptographic password hashing)
+* **Multer** (Multipart/form-data handling for local file uploads)
+* **Fuse.js** (Lightweight fuzzy-search for rapid, typo-tolerant querying)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧠 Engineering Highlights
 
-### `npm run eject`
+* **Optimized Search:** Implemented a hybrid search strategy. The backend uses MongoDB to filter hard constraints (e.g., Level, Category) to reduce the search space, followed by `Fuse.js` for in-memory fuzzy text matching on the reduced dataset.
+* **Deep Array Manipulation:** Engineered complex MongoDB updates to handle nested progress arrays, allowing users to independently toggle completion status for specific nested resources and milestones without overwriting data.
+* **Security First:** Enforced strict API protection using a custom `requireAuth` middleware to verify Bearer tokens, coupled with an `isAdmin` middleware layer to restrict destructive endpoints. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 💻 Running the Project Locally
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
+* Node.js (v16+)
+* MongoDB (Local instance or MongoDB Atlas URI)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 1. Clone the repository
+```bash
+git clone [https://github.com/YOUR_USERNAME/careercraft.git](https://github.com/YOUR_USERNAME/careercraft.git)
+cd careercraft
